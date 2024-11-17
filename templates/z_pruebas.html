@@ -13,5 +13,15 @@
 
     <input type="submit">
     </form>
+
+    <h2>Nombres Registrados</h2>
+    <ul>
+        {% for nombre in nombres %}
+        <li>
+            {{ nombre.Nombre }}
+        </li>
+        {% endfor %}
+    </ul>
+
 </body>
 </html>
