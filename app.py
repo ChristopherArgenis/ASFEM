@@ -2,7 +2,7 @@ from flask import Flask
 
 app = Flask(__name__)
 
-@app.route('/Iniciar Sesion')
+@app.route('/')
 def login():
     return "<h1> Inicio de Sesion </h1>"
 
