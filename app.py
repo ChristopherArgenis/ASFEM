@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 app = Flask(__name__)
 
@@ -13,6 +13,10 @@ def form():
 @app.route('/Comprobante')
 def output():
     return ""
+
+@app.route('/pruebas')
+def test():
+    return render_template("z_pruebas.html")
 
 if __name__ == '__main__':
     app.run()
