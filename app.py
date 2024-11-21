@@ -3,7 +3,8 @@ from pymongo import MongoClient
 
 app = Flask(__name__)
 # Conexion a la Base de Datos
-conexion = MongoClient("mongodb+srv://christopherpreciadosilva:Y4cs6WRIUcDb90Eq@solicitudes.7r9rd.mongodb.net/")
+# conexion = MongoClient("mongodb+srv://christopherpreciadosilva:Y4cs6WRIUcDb90Eq@solicitudes.7r9rd.mongodb.net/")
+conexion = MongoClient("mongodb+srv://christopherpreciadosilva:Y4cs6WRIUcDb90Eq@solicitudes.7r9rd.mongodb.net/?retryWrites=true&w=majority&appName=Solicitudes")
 
 # Conexion de la Aplicacion a la Base de Datos
 app.db = conexion.Almacen
