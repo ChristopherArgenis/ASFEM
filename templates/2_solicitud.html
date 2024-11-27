@@ -7,14 +7,60 @@
     <link rel="stylesheet" href="estilos_solicitud/estilos_solicitud.css">
 </head>
 <body>
-    <p class="titulo">Solicitud</p><br><br>
-    <p class="subtitulo">Situacion Medica</p>
-    <p class="contenido">En esta seccion irá el contenido del apartado 'Situacion Medica'</p>
-    <br>
+    <p class="titulo">Solicitud Prestamo</p>
+    <br><br>
+
+    <p class="subtitulo">Informaci&oacute;n Medica</p>
+
+    <label class="contenido">Tratamientos: </label>
+    <div class="customCheckbox">
+        <input type="checkbox" id="id_tratamientos1" name="tratamientos" value="1"> 
+        <label for="id_tratamientos1">Opcion 1</label> 
+    </div>
+    <div class="customCheckbox">
+        <input type="checkbox" id="id_tratamientos2" name="tratamientos" value="2">
+        <label for="id_tratamientos2">Opcion 2</label> 
+    </div>
+    <div class="customCheckbox">
+        <input type="checkbox" id="id_tratamientos3" name="tratamientos" value="3">
+        <label for="id_tratamientos3">Opcion 3</label> 
+    </div>
+    <div class="customCheckbox">
+        <input type="checkbox" id="id_tratamientos4" name="tratamientos" value="4">
+        <label for="id_tratamientos4">Opcion 4</label> 
+    </div>
+    <div class="customCheckbox">
+        <input type="checkbox" id="id_tratamientos5" name="tratamientos" value="5">
+        <label for="id_tratamientos5">Opcion 5</label> 
+    </div>
+    <br><br>
+
+    <label class="contenido" for="id_CostoEstimado">Costo Estimado: </label>
+    <div class="customInputNumber">
+        <input type="number" id="id_CostoEstimado">
+    </div>
+    <br><br>
+
+    <label class="contenido">Fecha del tratamiento: </label>
+    <div class="customInputDate">
+        <input type="date">
+    </div>
+    <br><br>
+
+    <label class="contenido">Tratamiento precios:</label>
+    <div class="customInputNumber">
+        <input type="number" id="id_CostoEstimado">
+    </div>
+    <br><br>
+
     <p class="subtitulo">Gastos Asociados</p>
     <p class="contenido">En esta seccion irá el contenido del apartado 'Gastos Asociados'</p>
     <br>
     <p class="subtitulo">Documentacion Requerida</p>
-    <p class="contenido">En esta seccion irá el contenido del apartado 'Documentacion Requerida'</p><br>
+    <p class="contenido">En esta seccion irá el contenido del apartado 'Documentacion Requerida'</p>
+    <br>
+    <div class ="customBotonSubmit">
+        <input type="submit" value="Enviar"></input>
+    </div>
 </body>
 </html>
