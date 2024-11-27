@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesion</title>
+</head>
+<body>
+    <form method="POST">
+    <label for="matricula">Matricula: </label>
+    <input type="text" name="matricula" id="matricula" required>
+    <br>
+    <label for="correo">Correo Estudiantil: </label>
+    <input type="email" name="correo" id="correo" required>
+
+    <input type="submit">
+
+    </form>
+
+    {% if mensaje != None %}
+        <h3 style="color: red;">{{ mensaje }}</h3>
+    {% endif %}
+</body>
+</html>
