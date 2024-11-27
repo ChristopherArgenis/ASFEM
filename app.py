@@ -1,10 +1,12 @@
-from flask import Flask
+from flask import Flask, render_template, request
 from controllers.database import Database
-from controllers.login import Login
 
 app = Flask(__name__)
 app.register_blueprint(Database)
-app.register_blueprint(Login)
+
+@app.route('/')
+def login():
+    return "<h1> Inicio de Sesion </h1>"
 
 @app.route('/Solicitud')
 def form():

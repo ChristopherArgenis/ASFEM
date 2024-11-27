@@ -1,7 +1,7 @@
 from flask import Blueprint, render_template, request
 from pymongo import MongoClient
 
-# Define un nuevo Blueprint con el nombre: 'database'
+# Define a new Blueprint named 'welcome'
 Database = Blueprint('database', __name__)
 
 # Conexion a la Base de Datos
