@@ -1,9 +1,9 @@
 from flask import Flask
-from controllers.database import Database
+# from controllers.database import Database
 from controllers.login import Login
 
 app = Flask(__name__)
-app.register_blueprint(Database)
+# app.register_blueprint(Database)
 app.register_blueprint(Login)
 
 @app.route('/Solicitud')
