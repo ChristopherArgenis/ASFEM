@@ -1,12 +1,15 @@
 from flask import Blueprint, render_template, request
+from link.link_db import Password
 from pymongo import MongoClient
 
 # Define a new Blueprint named 'welcome'
 Database = Blueprint('database', __name__)
 
+password_db = Password()
+
 # Conexion a la Base de Datos
-# conexion = MongoClient("mongodb+srv://christopherpreciadosilva:Y4cs6WRIUcDb90Eq@solicitudes.7r9rd.mongodb.net/")
-conexion = MongoClient("mongodb+srv://christopherpreciadosilva:Y4cs6WRIUcDb90Eq@solicitudes.7r9rd.mongodb.net/?retryWrites=true&w=majority&appName=Solicitudes")
+# conexion = MongoClient(password_db.get_pass_compass())
+conexion = MongoClient(password_db.get_pass())
 
 # Conexion de la Aplicacion a la Base de Datos
 Database.db = conexion.Almacen
