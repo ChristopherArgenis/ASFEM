@@ -5,7 +5,7 @@
     margin-top: 20px;
     font-size: 38px;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 3px 3px 8px #202227;
+    text-shadow: 3px 3px 8px #000000;
 }
 
 /* Customizacion de los subtitulos, la separacion entre contenidos (Sitacion medica, gastos asociados y documentacion requerida)*/
@@ -14,9 +14,10 @@
     text-align: center;
     font-size: 30px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 2px 3px 10px #4e4e4e;
+    text-shadow: 2px 3px 10px #2f302f;
 }
 
+/* Customizacion del texto que indica lo que tiene que llenar el usuario*/
 .contenido
 {
     display: block; /* Hace que el label se comporte como un bloque */
@@ -25,7 +26,6 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-weight:600;
 }
-
 
 /* div para centrar los checkbox en la página y diseño del texto */
 .customCheckbox
@@ -84,6 +84,24 @@ input[type=date]
     color: #333; /* Color de texto */
 }
 
+/* div para centrar los checkbox en la página y diseño del texto */
+.customRadioButton
+{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;          /* Esto permite que sus elementos hijos se distribuyan y alineen de manera flexible */
+    justify-content: center;
+    align-items: center;    /* Centra los checkboxes horizontalmente */
+    gap: 5px;              /* Espaciado entre los checkboxes y el texto*/
+    margin-top: 2px;       /* Espacio entre los checkboxes */
+    border: 1px;
+}
+input[type="radio"]
+{
+    accent-color: #4CAF50; /* Cambia el color del botón radio */
+    margin-right: 5px; /* Espacio entre el botón y el texto */
+}
 
 /* Customizacion del boton Enviar*/
 input[type="submit"] 
@@ -96,14 +114,12 @@ input[type="submit"]
     border-radius: 20px; /* La curva de los bordes, mientras mas grande mas curvado*/
     cursor: pointer;     /* Esta funcion hace que cambie el cursor cuando lo pones encima del boton*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-  }
-
+}
   /* Customizacion del boton cuando el cursor se encuentra sobre él */
-  input[type="submit"]:hover {
+input[type="submit"]:hover {
     box-shadow: 0 5px 15px #0c530f; /* Sombra */
     transform: scale(1.05); /* Agranda ligeramente el botón */
-  }
-
+}
   /* Customizacion del div, para poder centrar el boton enviar*/
 .customBotonSubmit
 {
@@ -111,5 +127,3 @@ input[type="submit"]
     justify-content: center;
     margin-top: 20px
 }
-
-  
