@@ -1,0 +1,152 @@
+body
+{
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+.encabezado {
+    display: flex; /* Alinea elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #006935; /* Fondo verde */
+    height: 120px; /* Altura del encabezado */
+    padding: 0 20px; /* Espaciado interno */
+    position: relative; /* Permite usar posicionamiento absoluto */
+}
+
+
+.logo
+{
+    height: 100px;
+    margin-right: auto;
+}
+
+/* Customizacion unicamente del titulo*/
+.titulo {
+    font-size: 32px; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro de su contenedor */
+    margin: 0; /* Elimina márgenes */
+    flex-grow: 1; /* Permite al título ocupar el espacio necesario */
+}
+
+
+/* Customizacion de los subtitulos, la separacion entre contenidos (Sitacion medica, gastos asociados y documentacion requerida)*/
+.subtitulo
+{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 2px 3px 10px #2f302f;
+}
+
+/* Customizacion del texto que indica lo que tiene que llenar el usuario*/
+.contenido
+{
+    display: block; /* Hace que el label se comporte como un bloque */
+    text-align: center; /* Centra el texto dentro del label */
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:600;
+}
+
+/* div para centrar los checkbox en la página y diseño del texto */
+.customCheckbox
+{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;          /* Esto permite que sus elementos hijos se distribuyan y alineen de manera flexible */
+    justify-content: center;
+    align-items: center;    /* Centra los checkboxes horizontalmente */
+    gap: 5px;              /* Espaciado entre los checkboxes y el texto*/
+    margin-top: 2px;       /* Espacio entre los checkboxes */
+    border: 1px;
+}
+
+/* div para el input tipo numero en la página*/
+.customInputNumber
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;          /* Esto permite que sus elementos hijos se distribuyan y alineen de manera flexible */
+    justify-content: center;
+    align-items: center;    /* Centra horizontalmente */
+}
+input[type=number]
+{
+    font-size: 16px;
+    font-weight: 450;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 4px;
+    width: 80px;
+    border-radius: 5px; /* curvatura */
+    background-color: #f9f9f9; /* Color de fondo */
+    outline: none; /* Elimina el contorno al hacer foco */
+}
+/* Cambiar el borde cuando el input number está enfocado */
+input[type="number"]:focus {
+    border-color: #3c5f13;
+    box-shadow: 0 0 5px rgba(119, 168, 62, 0.5);
+}
+
+/* div para el input tipo numero en la página*/
+.customInputDate
+{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;          /* Esto permite que sus elementos hijos se distribuyan y alineen de manera flexible */
+    justify-content: center;
+    align-items: center;    /* Centra horizontalmente */
+}
+input[type=date]
+{
+    border: 2px solid #0c530f; /* Borde personalizado */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 5px;
+    font-size: 16px; /* Tamaño de la fuente */
+    background-color: #f9f9f9; /* Color de fondo */
+    color: #333; /* Color de texto */
+}
+
+/* div para centrar los checkbox en la página y diseño del texto */
+.customRadioButton
+{
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;          /* Esto permite que sus elementos hijos se distribuyan y alineen de manera flexible */
+    justify-content: center;
+    align-items: center;    /* Centra los checkboxes horizontalmente */
+    gap: 5px;              /* Espaciado entre los checkboxes y el texto*/
+    margin-top: 2px;       /* Espacio entre los checkboxes */
+    border: 1px;
+}
+input[type="radio"]
+{
+    accent-color: #4CAF50; /* Cambia el color del botón radio */
+    margin-right: 5px; /* Espacio entre el botón y el texto */
+}
+
+/* Customizacion del boton Enviar*/
+input[type="submit"] 
+{ 
+    background: linear-gradient(to right, #006935, #4b8b02); /* Color del boton con gradiente */
+    color: white;      /* color del texto*/
+    padding: 10px 25px;  /* anchor del boton, excluyendo el texto*/
+    font-size: 17px;     /* Tamaño del boton, incluyendo el texto*/
+    border: none;        /* se removió el borde del boton*/
+    border-radius: 20px; /* La curva de los bordes, mientras mas grande mas curvado*/
+    cursor: pointer;     /* Esta funcion hace que cambie el cursor cuando lo pones encima del boton*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+  /* Customizacion del boton enviar cuando el cursor se encuentra sobre él */
+input[type="submit"]:hover {
+    box-shadow: 0 5px 12px #0e4e11; /* Sombra */
+    transform: scale(1.03); /* Agranda ligeramente el botón */
+}
+  /* Customizacion del div, para poder centrar el boton enviar*/
+.customBotonSubmit
+{
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

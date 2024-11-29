@@ -1,0 +1,44 @@
+body
+{
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+.encabezado {
+    display: flex; /* Alinea elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #006935; /* Fondo verde */
+    height: 120px; /* Altura del encabezado */
+    padding: 0 20px; /* Espaciado interno */
+    position: relative; /* Permite usar posicionamiento absoluto */
+}
+
+/* Estilo para el título principal */
+h3 {
+    font-size: 36px; /* Tamaño más grande para la primera frase */
+    color: rgb(17, 100, 17);  
+}
+
+/* Estilo para los labels */
+label {
+    font-size: 18px;  /* Tamaño de fuente para los labels */
+    font-weight: bold; /* Negrita */
+}
+.logo
+{
+    height: 100px;
+    margin-right: auto;
+}
+
+/* Customizacion del boton Enviar*/
+input[type="submit"] 
+{ 
+    background: linear-gradient(to right, #006935, #4b8b02); /* Color del boton con gradiente */
+    color: white;      /* color del texto*/
+    padding: 10px 25px;  /* anchor del boton, excluyendo el texto*/
+    font-size: 17px;     /* Tamaño del boton, incluyendo el texto*/
+    border: none;        /* se removió el borde del boton*/
+    border-radius: 20px; /* La curva de los bordes, mientras mas grande mas curvado*/
+    cursor: pointer;     /* Esta funcion hace que cambie el cursor cuando lo pones encima del boton*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}

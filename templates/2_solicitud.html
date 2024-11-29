@@ -4,14 +4,109 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Solicitud</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/solicitud.css')}}">
 </head>
 <body>
+    <header class="encabezado"> 
+        <img src="{{ url_for('static', filename='images/logo_uabc.png')}}" alt="Logo de la universidad" class="logo">
+        <h1 class="titulo">Solicitud Ingreso</h1>
+    </header>
     <form method="POST">
-        <label for="x">x: </label>
-        <input type="text" name="x" id="x" required>
+        <br>
+        <p class="subtitulo">Informaci&oacute;n Medica</p>
 
-    <input type="submit">
+        <label class="contenido">Tratamientos: </label>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_tratamientos1" name="tratamientos" value="1"> 
+            <label for="id_tratamientos1">Farmacol&oacute;gicos</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_tratamientos2" name="tratamientos" value="2">
+            <label for="id_tratamientos2">Quir&uacute;rgicos</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_tratamientos3" name="tratamientos" value="3">
+            <label for="id_tratamientos3">Vacunaci&oacute;n</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_tratamientos4" name="tratamientos" value="4">
+            <label for="id_tratamientos4">Terapias biol&oacute;gicas</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_tratamientos5" name="tratamientos" value="5">
+            <label for="id_tratamientos5">Fitoterapia</label> 
+        </div>
+        <br><br>
 
+        <label class="contenido" for="id_CostoEstimado">Costo Estimado: </label>
+        <label class="contenido" for="id_CostoEstimado">(Promedio de costo)</label>
+        <div class="customInputNumber">
+            <input type="number" id="id_CostoEstimado">
+        </div>
+        <br><br>
+
+        <label class="contenido">Fecha de la cita tratamiento: </label>
+        <div class="customInputDate">
+            <input type="date">
+        </div>
+        <br><br>
+
+        <label class="contenido">Tratamiento previos:</label>
+        <div class="customRadioButton">
+            <input type="radio" id="id_seguroMedico" name="TratamientosPrevios" value="1"> 
+            <label for="id_seguroMedico">S&iacute;</label> 
+        </div>
+        <div class="customRadioButton">
+            <input type="radio" id="id_noSeguroMedico" name="TratamientosPrevios" value="2"> 
+            <label for="id_noSeguroMedico">No</label> 
+        </div>
+        <br>
+
+
+        <p class="subtitulo">Informacion Financiera</p>
+
+        <label class="contenido">¿Cuenta con seguro m&eacute;dico?</label>
+        <div class="customRadioButton">
+            <input type="radio" id="id_seguroMedico" name="seguroMedico" value="1"> 
+            <label for="id_seguroMedico">S&iacute;</label> 
+        </div>
+        <div class="customRadioButton">
+            <input type="radio" id="id_noSeguroMedico" name="seguroMedico" value="1"> 
+            <label for="id_noSeguroMedico">No</label> 
+        </div>
+        <div class="customRadioButton">
+            <input type="radio" id="id_SeguroFacultativo" name="seguroMedico" value="1"> 
+            <label for="id_SeguroFacultativo">Seguro Facultativo</label> 
+        </div><br><br>
+
+
+        <label class="contenido">Ingresos familiares:</label>
+        <label class="contenido">(¿Qué personas se encuentran laburando?)</label>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_ingresosPadre" name="Ingresos familiares" value="1"> 
+            <label for="id_ingresosPadre">Padre</label> 
+        </div>
+        <div class="customCheckbox">
+
+            <input type="checkbox" id="id_ingresosMadre" name="Ingresos familiares" value="2">
+            <label for="id_ingresosMadre">Madre</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_ingresosHermanos" name="Ingresos familiares" value="3">
+            <label for="id_ingresosHermanos">Hermanos</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_ingresosOtros" name="Ingresos familiares" value="3">
+            <label for="id_ingresosOtros">Otros</label> 
+        </div>
+        <div class="customCheckbox">
+            <input type="checkbox" id="id_ingresosNinguno" name="Ingresos familiares" value="3">
+            <label for="id_ingresosNinguno">Ninguno</label> 
+        </div>
+        <br><br>
+        <div class ="customBotonSubmit">
+            <input type="submit" value="Enviar"></input>
+        </div>
     </form>
 </body>
 </html>
