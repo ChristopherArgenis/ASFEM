@@ -29,11 +29,6 @@ body
     flex-grow: 1; /* Permite al título ocupar el espacio necesario */
 }
 
-.div_para_titulo
-{
-    display: flex;
-    align-items: center;
-}
 
 /* Customizacion de los subtitulos, la separacion entre contenidos (Sitacion medica, gastos asociados y documentacion requerida)*/
 .subtitulo
@@ -152,5 +147,6 @@ input[type="submit"]:hover {
 {
     display: flex; 
     justify-content: center;
-    margin-top: 20px
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
