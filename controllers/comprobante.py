@@ -1,11 +1,15 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect, request
 
 Comprobante = Blueprint("comprobante", __name__)
 
-@Comprobante.route('/Aceptado')
+@Comprobante.route('/Aceptado', methods=["GET", "POST"])
 def aceptacion():
+    if request.method == "POST":
+        return redirect('/')
     return render_template("Aceptado.html")
 
-@Comprobante.route('/Rechazado')
+@Comprobante.route('/Rechazado', methods=["GET", "POST"])
 def rechazar():
+    if request.method == "POST":
+        return redirect('/')
     return render_template("Rechazado.html")
