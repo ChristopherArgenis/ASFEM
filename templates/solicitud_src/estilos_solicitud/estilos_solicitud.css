@@ -1,11 +1,38 @@
-/* Customizacion unicamente del titulo*/
-.titulo
+body
 {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 38px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    text-shadow: 3px 3px 8px #000000;
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+.encabezado {
+    display: flex; /* Alinea elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #006935; /* Fondo verde */
+    height: 120px; /* Altura del encabezado */
+    padding: 0 20px; /* Espaciado interno */
+    position: relative; /* Permite usar posicionamiento absoluto */
+}
+
+
+.logo
+{
+    height: 100px;
+    margin-right: auto;
+}
+
+/* Customizacion unicamente del titulo*/
+.titulo {
+    font-size: 32px; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro de su contenedor */
+    margin: 0; /* Elimina márgenes */
+    flex-grow: 1; /* Permite al título ocupar el espacio necesario */
+}
+
+.div_para_titulo
+{
+    display: flex;
+    align-items: center;
 }
 
 /* Customizacion de los subtitulos, la separacion entre contenidos (Sitacion medica, gastos asociados y documentacion requerida)*/
@@ -60,10 +87,10 @@ input[type=number]
     background-color: #f9f9f9; /* Color de fondo */
     outline: none; /* Elimina el contorno al hacer foco */
 }
-/* Cambiar el borde cuando el input está enfocado */
+/* Cambiar el borde cuando el input number está enfocado */
 input[type="number"]:focus {
-    border-color: #416814;
-    box-shadow: 0 0 5px rgba(139, 195, 74, 0.5);
+    border-color: #3c5f13;
+    box-shadow: 0 0 5px rgba(119, 168, 62, 0.5);
 }
 
 /* div para el input tipo numero en la página*/
@@ -115,10 +142,10 @@ input[type="submit"]
     cursor: pointer;     /* Esta funcion hace que cambie el cursor cuando lo pones encima del boton*/
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
-  /* Customizacion del boton cuando el cursor se encuentra sobre él */
+  /* Customizacion del boton enviar cuando el cursor se encuentra sobre él */
 input[type="submit"]:hover {
-    box-shadow: 0 5px 15px #0c530f; /* Sombra */
-    transform: scale(1.05); /* Agranda ligeramente el botón */
+    box-shadow: 0 5px 12px #0e4e11; /* Sombra */
+    transform: scale(1.03); /* Agranda ligeramente el botón */
 }
   /* Customizacion del div, para poder centrar el boton enviar*/
 .customBotonSubmit
