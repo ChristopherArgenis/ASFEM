@@ -1,20 +1,25 @@
 from flask import Blueprint, request, render_template, redirect
+from link.link_db import Password
+from services.conexion import Conector
 
 Login = Blueprint("login", __name__)
+
+pass_word = Password()
+access = Conector(pass_word)
+Login.db = access.conectar().Almacen
 
 @Login.route('/', methods=["GET", "POST"])
 def login():
     mensaje = None
-    registros = { 376907: "christopher.preciado.silva@uabc.edu.mx" }
     matricula, correo = "", ""
     if request.method == "POST":
         # Capturar las entradas
         matricula = request.form.get("matricula")
-        correo = request.form.get("correo")
+        correo = request.form.get("correo_electronico")
 
         # Encontrar el registro de este estudiante
         try:
-            if registros[int(matricula)] == correo:
+            if Login.db.Solicitudes.find({matricula: correo}):
                 mensaje = None
                 return redirect('/Solicitud')
         except:
