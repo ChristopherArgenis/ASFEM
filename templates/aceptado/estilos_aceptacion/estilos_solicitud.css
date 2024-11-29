@@ -1,0 +1,59 @@
+body
+{
+    margin: 0;
+}
+
+/* Estilo del encabezado */
+.encabezado {
+    display: flex; /* Alinea elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos */
+    background-color: #006935; /* Fondo verde */
+    height: 120px; /* Altura del encabezado */
+    padding: 0 20px; /* Espaciado interno */
+    position: relative; /* Permite usar posicionamiento absoluto */
+}
+
+
+.logo
+{
+    height: 100px;
+    margin-right: auto;
+}
+
+/* Customizacion unicamente del titulo*/
+.titulo {
+    font-size: 32px; /* Tamaño del texto */
+    color: white; /* Color del texto */
+    text-align: center; /* Centra el texto dentro de su contenedor */
+    margin: 0; /* Elimina márgenes */
+    flex-grow: 1; /* Permite al título ocupar el espacio necesario */
+}
+
+
+/* Customizacion del boton Enviar*/
+input[type="submit"] 
+{ 
+    background: linear-gradient(to right, #006935, #4b8b02); /* Color del boton con gradiente */
+    color: white;      /* color del texto*/
+    padding: 10px 25px;  /* anchor del boton, excluyendo el texto*/
+    font-size: 17px;     /* Tamaño del boton, incluyendo el texto*/
+    border: none;        /* se removió el borde del boton*/
+    border-radius: 20px; /* La curva de los bordes, mientras mas grande mas curvado*/
+    cursor: pointer;     /* Esta funcion hace que cambie el cursor cuando lo pones encima del boton*/
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+
+/* Estilo para los labels */
+h3 {
+    font-size: 36px;  /* Tamaño de fuente para los labels */
+    font-weight: bold; /* Negrita */
+}
+
+  /* Customizacion del div, para poder centrar el boton enviar*/
+.customBotonSubmit
+{
+    display: flex; 
+    justify-content: center;
+    margin-top: 20px
+}
