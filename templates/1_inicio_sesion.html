@@ -4,8 +4,54 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sesion</title>
+    <title>Inicio de Sesion</title>
+    <style>
+        /* Estilo para el título principal */
+        h3 {
+            font-size: 36px; /* Tamaño más grande para la primera frase */
+            color: rgb(17, 100, 17);  
+        }
+
+        /* Estilo para los labels */
+        label {
+            font-size: 18px;  /* Tamaño de fuente para los labels */
+            font-weight: bold; /* Negrita */
+        }
+    </style>
 </head>
 <body>
+    <center> <h3>UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</h3></center>
+    <br>
+
+    <center>
+        <label for="id_matricula">NOMBRE DE USUARIO</label>
+        <br>
+        <input type="text" id="id_matricula" name="matricula" value="" autocomplete="off" required minlength="6" maxlength="6">
+        <br>
+    </center>
+    <br>
+    <br>
+    <br>
+    <center>
+        <label for="id_correo_electronico"> CORREO INSTITUCIONAL</label>
+        <br>
     
+        <input type="email" name="correo_electronico" id="id_correo_electronico">
+    </center>
+    <br>
+    <br>
+    <br>
+    <center>
+        <label for="id_contraseña">CONTRASEÑA</label>
+        <br>
+        <input type="password" id="id_contraseña" name="contraseña" value="">
+    </center>
+
+    <br>
+    <br>
+    <center>
+        <input type="submit" value="INGRESAR">
+        <input type="submit" value="¿OLVIDASTE TU CONTRASEÑA?"
+    </center>
 </body>
 </html>
