@@ -10,30 +10,33 @@
     </header>
 </head>
 <body>
-    <center> <h3>UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</h3></center>
-    <br>
+    <form action="" method="post">
+        <center> <h3>UNIVERSIDAD AUT&Oacute;NOMA DE BAJA CALIFORNIA</h3>
+        </center>
+        <br>
 
-    <center>
-        <label for="id_matricula">MATRICULA</label>
+        <center>
+            <label for="id_matricula">MATRICULA</label>
+            <br>
+            <input type="text" id="id_matricula" name="matricula" value="" autocomplete="off" required minlength="6" maxlength="6" >
+            <br>
+        </center>
         <br>
-        <input type="text" id="id_matricula" name="matricula" value="" autocomplete="off" required minlength="6" maxlength="6">
         <br>
-    </center>
-    <br>
-    <br>
-    <br>
-    <center>
-        <label for="id_correo_electronico"> CORREO INSTITUCIONAL</label>
         <br>
+        <center>
+            <label for="id_correo_electronico"> CORREO INSTITUCIONAL</label>
+            <br>
     
-        <input type="email" name="correo_electronico" id="id_correo_electronico">
-    </center>
-    <br>
-    <br>
-    <br>
-    <br>
-    <center>
+            <input type="email" name="correo_electronico" id="id_correo_electronico" required>
+        </center>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
         <input type="submit" value="INGRESAR">
-    </center>
+        </center>
+</form>
 </body>
 </html>
