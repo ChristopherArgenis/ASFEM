@@ -19,7 +19,7 @@ def login():
 
         # Encontrar el registro de este estudiante
         try:
-            if Login.db.Solicitudes.find({matricula: correo}):
+            if Login.db.Solicitudes.findOne({matricula: correo}):
                 mensaje = None
                 return redirect('/Solicitud')
         except:
